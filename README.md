@@ -94,7 +94,7 @@ To learn more see usage and the examples below.
 
 ### Service Account
 For server to server communication, where user interaction is not a viable option, 
-is it possible to use a service account, as described in this [Google document](https://developers.google.com/identity/protocols/OAuth2ServiceAccount).
+is it possible to use a service account, as described in this [Google document](https://s.google.com/identity/protocols/OAuth2ServiceAccount).
 If you want to use a service account, instead of being interactively prompted for
 authentication, you need to use the `--service-account <serviceAccountCredentials>` 
 global option, where `serviceAccountCredentials` is a file in JSON format obtained
@@ -151,7 +151,7 @@ global:
 
 options:
   -m, --max <maxFiles>       Max files to list, default: 30
-  -q, --query <query>        Default query: "trashed = false and 'me' in owners". See https://developers.google.com/drive/search-parameters
+  -q, --query <query>        Default query: "trashed = false and 'me' in owners". See https://developers.google.com/drive/api/v3/ref-search-terms
   --order <sortOrder>        Sort order. See https://godoc.org/google.golang.org/api/drive/v3#FilesListCall.OrderBy
   --name-width <nameWidth>   Width of name column, default: 40, minimum: 9, use 0 for full width
   --absolute                 Show absolute path to file (will only show path from first parent)
